@@ -1,6 +1,5 @@
 SRC += muse.c
 
-SRC += user_layers.c
 SRC += user_rgb_functions.c
 SRC += user_rgb_layers.c
 

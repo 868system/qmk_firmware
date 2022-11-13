@@ -73,6 +73,9 @@ enum my_layers {
 /*
     Popular and standard keyboard layouts
 */
+
+#define LAYOUT_MAIN LAYOUT_COLEMAK
+
 #define LAYOUT_QWERTY LAYOUT_preonic_wrapper( \
                     KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,       KC_Y,       KC_U,       KC_I,       KC_O,       KC_P, \
                     KC_A,       KC_S,       KC_D,       KC_F,       KC_G,       KC_H,       KC_J,       KC_K,       KC_L,       KC_SCLN, \
