@@ -34,12 +34,12 @@ layer_state_t update_quad_layer_state(const layer_state_t state, const uint8_t l
     const layer_state_t status_x = 1UL & (state >> layer_x);
     const layer_state_t status_y = 1UL & (state >> layer_y);
 
-    const layer_state_t mask_or     =  1UL << layer_or;
-    const layer_state_t mask_and_or = (1UL << layer_and) | mask_or;
+    const layer_state_t mask_or  = 1UL << layer_or;
+    const layer_state_t mask_and = 1UL << layer_and;
 
-    return (status_x & status_y) ?                            state |  mask_and_or
-                                 : ((status_x | status_y) ? ((state & ~mask_and_or) | mask_or)
-                                                          :   state & ~mask_and_or);
+    return  (status_x & status_y) ?                             state |    mask_and  |  mask_or
+                                  : ((status_x | status_y) ? (( state & ~  mask_and) |  mask_or )
+                                                           : (  state & ~ (mask_and  |  mask_or )));
 }
 
 layer_state_t layer_state_set_user(const layer_state_t state) {
