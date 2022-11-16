@@ -18,6 +18,7 @@
 */
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUNCTION
+#undef RGBLIGHT_ANIMATIONS
 
 /*
     Preonic V3 LEDs
@@ -45,7 +46,6 @@
 */
 
 #undef RGBLED_NUM
-#undef RGBLIGHT_ANIMATIONS
 #undef USE_CIE1931_CURVE
 
 #define RGBLED_NUM 18
@@ -56,30 +56,28 @@
 #define RGBLIGHT_LAYERS_RETAIN_VAL
 #define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
 
+#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+#define RGBLIGHT_EFFECT_RGB_TEST
+
 #if defined USER_DEBUG_RGB
     /*
         Debug mode:
-        - Include all animations
         - 32 hue ticks, wrap around
         - Smaller sat, val increments (15 multiples of 17)
             17  34  51  68  85
             102 119 136 153 170
             187 204 221 238 255
     */
-    #define RGBLIGHT_ANIMATIONS
     #define RGBLIGHT_HUE_STEP 8
     #define RGBLIGHT_SAT_STEP 17
     #define RGBLIGHT_VAL_STEP 17
 #else
     /*
         Regular mode:
-        - Only Rainbow Swirl is needed
         - 16 hue ticks, wrap around
         - Larger sat, val increments (5 multiples of 51)
             51 102 153 204 255
     */
-    #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
-    #define RGBLIGHT_EFFECT_RGB_TEST
     #define RGBLIGHT_HUE_STEP 16
     #define RGBLIGHT_SAT_STEP 51
     #define RGBLIGHT_VAL_STEP 51
