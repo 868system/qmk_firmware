@@ -4,8 +4,8 @@
     Windows 10 new Japanese IME key names
     https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/keyboard-japan-ime
 */
-#define KC_IME_ON  KC_LANG1 // also Japanese Macintosh "かな" "Kana"
-#define KC_IME_OFF KC_LANG2 // also Japanese Macintosh "英数" "Eisuu"
+#define KC_IME_ON  KC_LNG1 // also Japanese Macintosh "かな" "Kana"
+#define KC_IME_OFF KC_LNG2 // also Japanese Macintosh "英数" "Eisuu"
 
 /*
     Macintosh Mission Control and Launchpad

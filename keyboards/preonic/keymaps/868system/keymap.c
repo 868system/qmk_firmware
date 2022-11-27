@@ -153,13 +153,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_RSE] = LAYOUT_preonic_1x2uC(
         _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,
         _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,
-        _______,    _______,    _______,    _______,    _______,    _______,    _______,    KC_PAUS,    KC_CLCK,    KC_NLCK,    KC_SLCK,    _______,
+        _______,    _______,    _______,    _______,    _______,    _______,    _______,    KC_PAUS,    KC_CAPS,    KC_NUM,     KC_SCRL,    _______,
         _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,
         _______,    _______,    _______,    _______,    _______,        _______,            _______,    _______,    _______,    _______,    _______
     ),
 
     [_LR_AND] = LAYOUT_preonic_1x2uC(
-        TO(_BLOCK), DEBUG,      XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    LED_MODE,
+        TO(_BLOCK), DB_TOGG,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    LED_MODE,
         MO_RESET,   DF(_MAIN),  DF(_QWER),  XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    RGB_SAD,    RGB_VAI,    RGB_SAI,    RGB_TOG,
         XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    RGB_HUD,    RGB_VAD,    RGB_HUI,    RGB_M_SW,
         XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    RGB_RMOD,   RGB_MOD,    RGB_M_P,    XXXXXXX,
